@@ -1,4 +1,10 @@
-# Sources
+# Notes
+
+## Notes
+
+[Tarot Reversals UI CodePen](https://codepen.io/JaimeStill/pen/gOjwYwP)
+
+## Sources
 
 * [Labyrinthos](https://labyrinthos.co)
     * [Astrology](https://labyrinthos.co/blogs/astrology-horoscope-zodiac-signs)
