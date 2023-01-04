@@ -12,7 +12,7 @@ public static class Pentacles
     };
 
     public static MinorTarotCard Ace => new(
-        22,
+        36,
         1,
         TarotSuits.Pentacles,
         ImageUrl("ace"),
@@ -26,7 +26,7 @@ public static class Pentacles
     );
 
     public static MinorTarotCard Two => new(
-        23,
+        37,
         2,
         TarotSuits.Pentacles,
         ImageUrl("two"),
@@ -40,7 +40,7 @@ public static class Pentacles
     );
 
     public static MinorTarotCard Three => new(
-        24,
+        38,
         3,
         TarotSuits.Pentacles,
         ImageUrl("three"),
@@ -54,7 +54,7 @@ public static class Pentacles
     );
 
     public static MinorTarotCard Four => new(
-        25,
+        39,
         4,
         TarotSuits.Pentacles,
         ImageUrl("four"),
@@ -68,7 +68,7 @@ public static class Pentacles
     );
 
     public static MinorTarotCard Five => new(
-        26,
+        40,
         5,
         TarotSuits.Pentacles,
         ImageUrl("five"),
@@ -82,7 +82,7 @@ public static class Pentacles
     );
 
     public static MinorTarotCard Six => new(
-        27,
+        41,
         6,
         TarotSuits.Pentacles,
         ImageUrl("six"),
@@ -96,7 +96,7 @@ public static class Pentacles
     );
 
     public static MinorTarotCard Seven => new(
-        28,
+        42,
         7,
         TarotSuits.Pentacles,
         ImageUrl("seven"),
@@ -110,7 +110,7 @@ public static class Pentacles
     );
 
     public static MinorTarotCard Eight => new(
-        29,
+        43,
         8,
         TarotSuits.Pentacles,
         ImageUrl("eight"),
@@ -124,7 +124,7 @@ public static class Pentacles
     );
 
     public static MinorTarotCard Nine => new(
-        30,
+        44,
         9,
         TarotSuits.Pentacles,
         ImageUrl("nine"),
@@ -138,7 +138,7 @@ public static class Pentacles
     );
 
     public static MinorTarotCard Ten => new(
-        31,
+        45,
         10,
         TarotSuits.Pentacles,
         ImageUrl("ten"),
@@ -152,7 +152,7 @@ public static class Pentacles
     );
 
     public static MinorTarotCard Page => new(
-        32,
+        46,
         11,
         TarotSuits.Pentacles,
         ImageUrl("page"),
@@ -166,7 +166,7 @@ public static class Pentacles
     );
 
     public static MinorTarotCard Knight => new(
-        33,
+        47,
         12,
         TarotSuits.Pentacles,
         ImageUrl("knight"),
@@ -180,7 +180,7 @@ public static class Pentacles
     );
 
     public static MinorTarotCard Queen => new(
-        34,
+        48,
         13,
         TarotSuits.Pentacles,
         ImageUrl("queen"),
@@ -194,7 +194,7 @@ public static class Pentacles
     );
 
     public static MinorTarotCard King => new(
-        35,
+        49,
         14,
         TarotSuits.Pentacles,
         ImageUrl("king"),

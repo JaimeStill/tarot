@@ -29,7 +29,7 @@ static void PrintTarotResult<T>(T card) where T : TarotCard
     else if (card is MinorTarotCard minor)
     {
         Console.WriteLine($"Element: {minor.Suit.Element.Name}");
-        Console.WriteLine($"Zodiacs: {string.Join(", ", minor.Suit.Element.Zodiacs.Select(x => x.Name))}");
+        Console.WriteLine($"Zodiacs: {string.Join(", ", TarotZodiacs.GetByElement(minor.Suit.Element).Select(x => x.Name))}");
     }
 
     Console.WriteLine($"Keywords: {card.Keywords}");

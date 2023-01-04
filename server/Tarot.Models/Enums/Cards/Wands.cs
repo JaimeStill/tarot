@@ -12,7 +12,7 @@ public static class Wands
     };
 
     public static MinorTarotCard Ace => new(
-        22,
+        64,
         1,
         TarotSuits.Wands,
         ImageUrl("1-ace"),
@@ -26,7 +26,7 @@ public static class Wands
     );
 
     public static MinorTarotCard Two => new(
-        23,
+        65,
         2,
         TarotSuits.Wands,
         ImageUrl("2"),
@@ -40,7 +40,7 @@ public static class Wands
     );
 
     public static MinorTarotCard Three => new(
-        24,
+        66,
         3,
         TarotSuits.Wands,
         ImageUrl("3"),
@@ -54,7 +54,7 @@ public static class Wands
     );
 
     public static MinorTarotCard Four => new(
-        25,
+        67,
         4,
         TarotSuits.Wands,
         ImageUrl("4"),
@@ -68,7 +68,7 @@ public static class Wands
     );
 
     public static MinorTarotCard Five => new(
-        26,
+        68,
         5,
         TarotSuits.Wands,
         ImageUrl("5"),
@@ -82,7 +82,7 @@ public static class Wands
     );
 
     public static MinorTarotCard Six => new(
-        27,
+        69,
         6,
         TarotSuits.Wands,
         ImageUrl("6"),
@@ -96,7 +96,7 @@ public static class Wands
     );
 
     public static MinorTarotCard Seven => new(
-        28,
+        70,
         7,
         TarotSuits.Wands,
         ImageUrl("7"),
@@ -110,7 +110,7 @@ public static class Wands
     );
 
     public static MinorTarotCard Eight => new(
-        29,
+        71,
         8,
         TarotSuits.Wands,
         ImageUrl("8"),
@@ -124,7 +124,7 @@ public static class Wands
     );
 
     public static MinorTarotCard Nine => new(
-        30,
+        72,
         9,
         TarotSuits.Wands,
         ImageUrl("9"),
@@ -138,7 +138,7 @@ public static class Wands
     );
 
     public static MinorTarotCard Ten => new(
-        31,
+        73,
         10,
         TarotSuits.Wands,
         ImageUrl("10"),
@@ -152,7 +152,7 @@ public static class Wands
     );
 
     public static MinorTarotCard Page => new(
-        32,
+        74,
         11,
         TarotSuits.Wands,
         ImageUrl("page"),
@@ -166,7 +166,7 @@ public static class Wands
     );
 
     public static MinorTarotCard Knight => new(
-        33,
+        75,
         12,
         TarotSuits.Wands,
         ImageUrl("knight"),
@@ -180,7 +180,7 @@ public static class Wands
     );
 
     public static MinorTarotCard Queen => new(
-        34,
+        76,
         13,
         TarotSuits.Wands,
         ImageUrl("queen"),
@@ -194,7 +194,7 @@ public static class Wands
     );
 
     public static MinorTarotCard King => new(
-        35,
+        77,
         14,
         TarotSuits.Wands,
         ImageUrl("king"),

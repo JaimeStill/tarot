@@ -12,7 +12,7 @@ public static class Swords
     };
 
     public static MinorTarotCard Ace => new(
-        22,
+        50,
         1,
         TarotSuits.Swords,
         ImageUrl("01-ace"),
@@ -26,7 +26,7 @@ public static class Swords
     );
 
     public static MinorTarotCard Two => new(
-        23,
+        51,
         2,
         TarotSuits.Swords,
         ImageUrl("02-two"),
@@ -41,7 +41,7 @@ public static class Swords
     );
 
     public static MinorTarotCard Three => new(
-        24,
+        52,
         3,
         TarotSuits.Swords,
         ImageUrl("03-three"),
@@ -55,7 +55,7 @@ public static class Swords
     );
 
     public static MinorTarotCard Four => new(
-        25,
+        53,
         4,
         TarotSuits.Swords,
         ImageUrl("04-four"),
@@ -69,7 +69,7 @@ public static class Swords
     );
 
     public static MinorTarotCard Five => new(
-        26,
+        54,
         5,
         TarotSuits.Swords,
         ImageUrl("05-five"),
@@ -83,7 +83,7 @@ public static class Swords
     );
 
     public static MinorTarotCard Six => new(
-        27,
+        55,
         6,
         TarotSuits.Swords,
         ImageUrl("06-six"),
@@ -97,7 +97,7 @@ public static class Swords
     );
 
     public static MinorTarotCard Seven => new(
-        28,
+        56,
         7,
         TarotSuits.Swords,
         ImageUrl("07-seven"),
@@ -111,7 +111,7 @@ public static class Swords
     );
 
     public static MinorTarotCard Eight => new(
-        29,
+        57,
         8,
         TarotSuits.Swords,
         ImageUrl("08-eight"),
@@ -125,7 +125,7 @@ public static class Swords
     );
 
     public static MinorTarotCard Nine => new(
-        30,
+        58,
         9,
         TarotSuits.Swords,
         ImageUrl("09-nine"),
@@ -139,7 +139,7 @@ public static class Swords
     );
 
     public static MinorTarotCard Ten => new(
-        31,
+        59,
         10,
         TarotSuits.Swords,
         ImageUrl("10-ten"),
@@ -153,7 +153,7 @@ public static class Swords
     );
 
     public static MinorTarotCard Page => new(
-        32,
+        60,
         11,
         TarotSuits.Swords,
         ImageUrl("page"),
@@ -167,7 +167,7 @@ public static class Swords
     );
 
     public static MinorTarotCard Knight => new(
-        33,
+        61,
         12,
         TarotSuits.Swords,
         ImageUrl("knight"),
@@ -181,7 +181,7 @@ public static class Swords
     );
 
     public static MinorTarotCard Queen => new(
-        34,
+        62,
         13,
         TarotSuits.Swords,
         ImageUrl("queen"),
@@ -195,7 +195,7 @@ public static class Swords
     );
 
     public static MinorTarotCard King => new(
-        35,
+        63,
         14,
         TarotSuits.Swords,
         ImageUrl("king"),

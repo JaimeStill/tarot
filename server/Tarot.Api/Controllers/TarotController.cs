@@ -7,11 +7,11 @@ namespace Tarot.Api.Controllers;
 public class TarotController : Controller
 {
     [HttpGet("[action]")]
-    public IActionResult GetDeck() =>
+    public IActionResult Get() =>
         Ok(TarotCard.Deck);
 
     [HttpGet("[action]")]
-    public IActionResult GetShuffledDeck([FromQuery]uint? shuffles) =>
+    public IActionResult GetShuffled([FromQuery]uint? shuffles) =>
         Ok(TarotCard.Deck.Shuffle(shuffles ?? 0));
 
     [HttpGet("[action]")]
@@ -37,4 +37,16 @@ public class TarotController : Controller
     [HttpGet("[action]")]
     public IActionResult GetWands() =>
         Ok(Wands.Cards);
+
+    [HttpGet("[action]/{id:int}")]
+    public ActionResult<MajorTarotCard> GetMajorCard([FromRoute]int id) =>
+        Ok(MajorArcana.Cards.Get(id));
+
+    [HttpGet("[action]/{id:int}")]
+    public ActionResult<MinorTarotCard> GetMinorCard([FromRoute]int id) =>
+        Ok(MinorArcana.Cards.Get(id));
+
+    [HttpPost("[action]")]
+    public IActionResult GetBySuit([FromBody]TarotSuit suit) =>
+        Ok(MinorArcana.GetBySuit(suit));
 }

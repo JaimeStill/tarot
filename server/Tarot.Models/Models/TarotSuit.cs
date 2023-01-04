@@ -16,6 +16,4 @@ public class TarotSuit : TarotBase
     }
 
     public TarotElement Element => TarotElements.Elements.Get(ElementId);
-
-    public IEnumerable<MinorTarotCard> Cards => MinorArcana.GetBySuit(this);
 }

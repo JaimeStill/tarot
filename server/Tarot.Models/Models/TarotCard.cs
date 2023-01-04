@@ -104,6 +104,6 @@ public class MajorTarotCard : TarotCard
         ElementId = element.Id;
     }
 
-    public TarotAstrology Astrology => TarotAstrology.Get(AstrologyId, AstrologyType);
+    public TarotAstrology Astrology => TarotAstrology.Get(AstrologyType, AstrologyId);
     public TarotElement Element => TarotElements.Elements.Get(ElementId);
 }

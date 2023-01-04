@@ -17,6 +17,4 @@ public class TarotPlanet : TarotAstrology
         Transition = transition;
         Keywords = keywords;
     }
-
-    public IEnumerable<TarotZodiac> Zodiacs => TarotZodiacs.GetByRuler(this);
 }
