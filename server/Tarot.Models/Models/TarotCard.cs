@@ -74,6 +74,7 @@ public class MinorTarotCard : TarotCard
         14 => "King",
         _ => Value.ToString()
     };
+
     public override string Name =>
         $"{ValueName} of {Suit.Name}";
 }

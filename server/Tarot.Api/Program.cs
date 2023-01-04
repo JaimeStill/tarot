@@ -5,6 +5,21 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder
     .Services
+    .AddCors(options =>
+        options.AddDefaultPolicy(policy =>
+        {
+            policy.AllowAnyOrigin();
+            policy.AllowAnyHeader();
+            policy.AllowAnyMethod();
+            policy.WithExposedHeaders(
+                "Content-Disposition",
+                "Access-Control-Allow-Origin"
+            );
+        })
+    );
+
+builder
+    .Services
     .AddControllers()
     .AddJsonOptions(options =>
     {
@@ -26,6 +41,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseRouting();
+app.UseCors();
 app.MapControllers();
 
 app.Run();

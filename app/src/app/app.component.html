@@ -1,0 +1,10 @@
+<p class="mat-headline-5">Tarot Cards</p>
+<ng-container *ngIf="deck.length > 0">
+    <section class="grid">
+        <div *ngFor="let card of deck"
+             class="card">
+            <p class="mat-headline-6">{{card.name}}</p>
+        </div>
+    </section>
+</ng-container>
+<router-outlet></router-outlet>
