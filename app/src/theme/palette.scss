@@ -1,0 +1,54 @@
+@use 'sass:map';
+@use '@angular/material' as mat;
+
+@function get-palette() {
+    $palette: (
+        "red": (
+            "palette": mat.define-palette(mat.$deep-orange-palette, 700),
+            "color": mat.get-color-from-palette(mat.$deep-orange-palette, 700),
+            "contrast": mat.get-contrast-color-from-palette(mat.$deep-orange-palette, 700)
+        ),
+        "green": (
+            "palette": mat.define-palette(mat.$light-green-palette, 500),
+            "color": mat.get-color-from-palette(mat.$light-green-palette, 500),
+            "contrast": mat.get-contrast-color-from-palette(mat.$light-green-palette, 500)            
+        ),
+        "blue": (
+            "palette": mat.define-palette(mat.$light-blue-palette, 200),
+            "color": mat.get-color-from-palette(mat.$light-blue-palette, 200),
+            "contrast": mat.get-contrast-color-from-palette(mat.$light-blue-palette, 200)
+        ),
+        "yellow": (
+            "palette": mat.define-palette(mat.$yellow-palette, 500),
+            "color": mat.get-color-from-palette(mat.$yellow-palette, 500),
+            "contrast": mat.get-contrast-color-from-palette(mat.$yellow-palette, 500)
+        )
+    );
+
+    $palette: map.set($palette, "primary", map.get($palette, "green"));
+    $palette: map.set($palette, "accent", map.get($palette, "blue"));
+    $palette: map.set($palette, "warn", map.get($palette, "red"));
+}
+
+@function get-theme($palette) {
+    @return (
+        color: (
+            "primary": get-theme-palette($palette, "primary"),
+            "accent": get-theme-palette($palette, "accent"),
+            "warn": get-theme-palette($palette, "warn")
+        ),
+        typography: mat.define-typography-config()
+    );
+}
+
+@function get-theme-palette($palette, $color) {
+    @return map.get(map.get($palette, $color), "palette");
+}
+
+@function get-theme-color($palette, $color) {
+    @return map.get(map.get($palette, $color), "color");
+}
+
+@function get-theme-contrast($palette, $color) {
+    @return map.get(map.get($palette, $color), "contrast");
+}

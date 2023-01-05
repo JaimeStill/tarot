@@ -1,0 +1,66 @@
+@use 'sass:map';
+@use 'sass:math';
+@use '@angular/material' as mat;
+@use './palette.scss';
+
+@mixin style-theme($theme, $palette) {
+    $config: mat.get-color-config($theme);
+
+    $b: map.get($config, background);
+    $background: mat.get-color-from-palette($b, background);
+    $app-bar: mat.get-color-from-palette($b, app-bar);
+    $card: mat.get-color-from-palette($b, card);
+    $hover: mat-get-color-from-palette($b, hover);
+    $status-bar: mat.get-color-from-palette($b, status-bar);
+    $tooltip: mat.get-color-from-palette($b, tooltip);
+
+    $f: map.get($config, foreground);
+    $base: mat.get-color-from-palette($f, base);
+    $disabled: mat.get-color-from-palette($f, disabled);
+    $divider: mat.get-color-from-palette($f, divider);
+    $icon: mat.get-color-from-palette($f, icon);
+    $text: mat.get-color-from-palette($f, text);
+
+    .bg { background-color: $background!important; }
+    .bg-app-bar { background-color: $app-bar!important; }
+    .bg-card { background-color: $card; }
+    .bg-hover { background-color: $hover; }
+    .bg-status-bar { background-color: $status-bar; }
+    .bg-tooltip { background-color: $tooltip; }
+
+    .color { color: $base!important; }
+    .color-disabled { color: $disabled!important; }
+    .color-divider { color: $divider!important; }
+    .color-icon { color: $icon!important; }
+    .color-text { color: $text!important; }
+
+    .border { border: 1px solid $base!important; }
+    .border-disabled { color: 1px solid $disabled!important; }
+    .border-divider { color: 1px solid $divider!important; }
+    .border-icon { color: 1px solid $icon!important; }
+    .border-text { color: 1px solid $text!important; }
+
+    .inverted-color {
+        background-color: $text!important;
+        color: $background!important;
+    }
+
+    @each $key, $value in $palette {
+        .background-#{$key} {
+            background-color: map.get($value, "color")!important;
+            color: map.get($value, "contrast")!important;
+        }
+
+        .border-#{$key} {
+            border: 1px solid map.get($value, "color")!important;
+        }
+
+        .color-#{$key} {
+            color: map.get($value, "color")!important;
+        }
+
+        mat-divider.mat-divider.#{$key} {
+            border-color: map.get($value, "color");
+        }
+    }
+}
