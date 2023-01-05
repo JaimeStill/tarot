@@ -2,7 +2,6 @@ namespace Tarot.Models;
 
 public static class Pentacles
 {
-    static string ImageUrl(string card) => $"https://cdn.shopify.com/s/files/1/1325/0879/files/{card}-of-pentacles-meaning-rider-waite-tarot_large.jpg";
     static string LinkUrl(string card) => $"https://labyrinthos.co/blogs/tarot-card-meanings-list/{card}-of-pentacles-meaning-tarot-card-meanings";
 
     public static List<MinorTarotCard> Cards => new()
@@ -15,7 +14,6 @@ public static class Pentacles
         36,
         1,
         TarotSuits.Pentacles,
-        ImageUrl("ace"),
         LinkUrl("ace"),
         new string[]{
             "Opportunity", "Prosperity", "New Venture"
@@ -29,7 +27,6 @@ public static class Pentacles
         37,
         2,
         TarotSuits.Pentacles,
-        ImageUrl("two"),
         LinkUrl("two"),
         new string[]{
             "Balancing Decisions", "Priorties", "Adapting to Change"
@@ -43,7 +40,6 @@ public static class Pentacles
         38,
         3,
         TarotSuits.Pentacles,
-        ImageUrl("three"),
         LinkUrl("three"),
         new string[]{
             "Teamwork", "Collaboration", "Building"
@@ -57,7 +53,6 @@ public static class Pentacles
         39,
         4,
         TarotSuits.Pentacles,
-        ImageUrl("four"),
         LinkUrl("four"),
         new string[]{
             "Conservation", "Security", "Frugality"
@@ -71,7 +66,6 @@ public static class Pentacles
         40,
         5,
         TarotSuits.Pentacles,
-        ImageUrl("five"),
         LinkUrl("five"),
         new string[]{
             "Need", "Poverty", "Insecurity"
@@ -85,7 +79,6 @@ public static class Pentacles
         41,
         6,
         TarotSuits.Pentacles,
-        ImageUrl("six"),
         LinkUrl("six"),
         new string[]{
             "Charity", "Generosity", "Sharing"
@@ -99,7 +92,6 @@ public static class Pentacles
         42,
         7,
         TarotSuits.Pentacles,
-        ImageUrl("seven"),
         LinkUrl("seven"),
         new string[]{
             "Hard Work", "Perseverance", "Diligence"
@@ -113,7 +105,6 @@ public static class Pentacles
         43,
         8,
         TarotSuits.Pentacles,
-        ImageUrl("eight"),
         LinkUrl("eight"),
         new string[]{
             "Diligence", "Passion", "High Standards"
@@ -127,7 +118,6 @@ public static class Pentacles
         44,
         9,
         TarotSuits.Pentacles,
-        ImageUrl("nine"),
         LinkUrl("nine"),
         new string[]{
             "Fruits of Labor", "Spending", "Rewards"
@@ -141,7 +131,6 @@ public static class Pentacles
         45,
         10,
         TarotSuits.Pentacles,
-        ImageUrl("ten"),
         LinkUrl("ten"),
         new string[]{
             "Legacy", "Inheritance", "Culmination"
@@ -155,7 +144,6 @@ public static class Pentacles
         46,
         11,
         TarotSuits.Pentacles,
-        ImageUrl("page"),
         LinkUrl("page"),
         new string[]{
             "Ambition", "Desire", "Diligence"
@@ -169,7 +157,6 @@ public static class Pentacles
         47,
         12,
         TarotSuits.Pentacles,
-        ImageUrl("knight"),
         LinkUrl("knight"),
         new string[]{
             "Efficiency", "Hard Work", "Responsibility"
@@ -183,7 +170,6 @@ public static class Pentacles
         48,
         13,
         TarotSuits.Pentacles,
-        ImageUrl("queen"),
         LinkUrl("queen"),
         new string[]{
             "Practicality", "Creature Comforts", "Financial Security"
@@ -197,7 +183,6 @@ public static class Pentacles
         49,
         14,
         TarotSuits.Pentacles,
-        ImageUrl("king"),
         LinkUrl("king"),
         new string[]{
             "Abundance", "Propserity", "Security"

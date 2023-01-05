@@ -2,7 +2,6 @@ namespace Tarot.Models;
 
 public static class Wands
 {
-    static string ImageUrl(string card) => $"https://cdn.shopify.com/s/files/1/1325/0879/files/{card}-of-wands-rider-waite-tarot_large.jpg";
     static string LinkUrl(string card) => $"https://labyrinthos.co/blogs/tarot-card-meanings-list/{card}-of-wands-meaning-tarot-card-meanings";
 
     public static List<MinorTarotCard> Cards => new()
@@ -15,7 +14,6 @@ public static class Wands
         64,
         1,
         TarotSuits.Wands,
-        ImageUrl("1-ace"),
         LinkUrl("ace"),
         new string[]{
             "Creation", "Willpower", "Inspiration", "Desire"
@@ -29,7 +27,6 @@ public static class Wands
         65,
         2,
         TarotSuits.Wands,
-        ImageUrl("2"),
         LinkUrl("two"),
         new string[]{
             "Planning", "Making Decisions", "Leaving Home"
@@ -43,7 +40,6 @@ public static class Wands
         66,
         3,
         TarotSuits.Wands,
-        ImageUrl("3"),
         LinkUrl("three"),
         new string[]{
             "Looking Ahead", "Expansion", "Rapid Growth"
@@ -57,7 +53,6 @@ public static class Wands
         67,
         4,
         TarotSuits.Wands,
-        ImageUrl("4"),
         LinkUrl("four"),
         new string[]{
             "Community", "Home", "Celebration"
@@ -71,7 +66,6 @@ public static class Wands
         68,
         5,
         TarotSuits.Wands,
-        ImageUrl("5"),
         LinkUrl("five"),
         new string[]{
             "Competition", "Conflict", "Rivalry"
@@ -85,7 +79,6 @@ public static class Wands
         69,
         6,
         TarotSuits.Wands,
-        ImageUrl("6"),
         LinkUrl("six"),
         new string[]{
             "Victory", "Success", "Public Reward"
@@ -99,7 +92,6 @@ public static class Wands
         70,
         7,
         TarotSuits.Wands,
-        ImageUrl("7"),
         LinkUrl("seven"),
         new string[]{
             "Perseverance", "Mount Defense", "Maintaining Control"
@@ -113,7 +105,6 @@ public static class Wands
         71,
         8,
         TarotSuits.Wands,
-        ImageUrl("8"),
         LinkUrl("eight"),
         new string[]{
             "Rapid Action", "Movement", "Quick Decisions"
@@ -127,7 +118,6 @@ public static class Wands
         72,
         9,
         TarotSuits.Wands,
-        ImageUrl("9"),
         LinkUrl("nine"),
         new string[]{
             "Resilience", "Grit", "Last Stand"
@@ -141,7 +131,6 @@ public static class Wands
         73,
         10,
         TarotSuits.Wands,
-        ImageUrl("10"),
         LinkUrl("ten"),
         new string[]{
             "Accomplishment", "Responsibility", "Burden"
@@ -155,7 +144,6 @@ public static class Wands
         74,
         11,
         TarotSuits.Wands,
-        ImageUrl("page"),
         LinkUrl("page"),
         new string[]{
             "Exploration", "Excitement", "Freedom"
@@ -169,7 +157,6 @@ public static class Wands
         75,
         12,
         TarotSuits.Wands,
-        ImageUrl("knight"),
         LinkUrl("knight"),
         new string[]{
             "Action", "Adventure", "Fearlessness"
@@ -183,7 +170,6 @@ public static class Wands
         76,
         13,
         TarotSuits.Wands,
-        ImageUrl("queen"),
         LinkUrl("queen"),
         new string[]{
             "Courage", "Determination", "Joy"
@@ -197,7 +183,6 @@ public static class Wands
         77,
         14,
         TarotSuits.Wands,
-        ImageUrl("king"),
         LinkUrl("king"),
         new string[]{
             "Big Picture", "Leader", "Overcoming Challenges"

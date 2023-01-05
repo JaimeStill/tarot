@@ -2,7 +2,6 @@ namespace Tarot.Models;
 
 public static class Cups
 {
-    static string ImageUrl(string card) => $"https://cdn.shopify.com/s/files/1/1325/0879/files/{card}-of-cups-meaning-rider-waite-tarot_large.jpg";
     static string LinkUrl(string card) => $"https://labyrinthos.co/blogs/tarot-card-meanings-list/{card}-of-cups-meaning-tarot-card-meanings";
 
     public static List<MinorTarotCard> Cards => new()
@@ -15,7 +14,6 @@ public static class Cups
         22,
         1,
         TarotSuits.Cups,
-        ImageUrl("ace"),
         LinkUrl("ace"),
         new string[]{
             "New Feelings", "Spirituality", "Intuition"
@@ -29,7 +27,6 @@ public static class Cups
         23,
         2,
         TarotSuits.Cups,
-        ImageUrl("two"),
         LinkUrl("two"),
         new string[]{
             "Unity", "Partnership", "Connection"
@@ -43,7 +40,6 @@ public static class Cups
         24,
         3,
         TarotSuits.Cups,
-        ImageUrl("three"),
         LinkUrl("three"),
         new string[]{
             "Friendship", "Community", "Happiness"
@@ -57,7 +53,6 @@ public static class Cups
         25,
         4,
         TarotSuits.Cups,
-        ImageUrl("four"),
         LinkUrl("four"),
         new string[]{
             "Apathy", "Contemplation", "Disconnectedness"
@@ -71,7 +66,6 @@ public static class Cups
         26,
         5,
         TarotSuits.Cups,
-        ImageUrl("five"),
         LinkUrl("five"),
         new string[]{
             "Loss", "Grief", "Disappointment"
@@ -85,7 +79,6 @@ public static class Cups
         27,
         6,
         TarotSuits.Cups,
-        ImageUrl("six"),
         LinkUrl("six"),
         new string[]{
             "Familiarity", "Happy Memories", "Healing"
@@ -99,7 +92,6 @@ public static class Cups
         28,
         7,
         TarotSuits.Cups,
-        ImageUrl("seven"),
         LinkUrl("seven"),
         new string[]{
             "Searching for Purpose", "Choices", "Daydreaming"
@@ -113,7 +105,6 @@ public static class Cups
         29,
         8,
         TarotSuits.Cups,
-        ImageUrl("eight"),
         LinkUrl("eight"),
         new string[]{
             "Walking Away", "Disillusionment", "Leaving Behind"
@@ -127,7 +118,6 @@ public static class Cups
         30,
         9,
         TarotSuits.Cups,
-        ImageUrl("nine"),
         LinkUrl("nine"),
         new string[]{
             "Satisfaction", "Emotional Stability", "Luxury"
@@ -141,7 +131,6 @@ public static class Cups
         31,
         10,
         TarotSuits.Cups,
-        ImageUrl("ten"),
         LinkUrl("ten"),
         new string[]{
             "Inner Happiness", "Fulfillment", "Dreams Coming True"
@@ -155,7 +144,6 @@ public static class Cups
         32,
         11,
         TarotSuits.Cups,
-        ImageUrl("page"),
         LinkUrl("page"),
         new string[]{
             "Happy Surprise", "Dreamer", "Sensitivity"
@@ -169,7 +157,6 @@ public static class Cups
         33,
         12,
         TarotSuits.Cups,
-        ImageUrl("knight"),
         LinkUrl("knight"),
         new string[]{
             "Following the Heart", "Idealist", "Romantic"
@@ -183,7 +170,6 @@ public static class Cups
         34,
         13,
         TarotSuits.Cups,
-        ImageUrl("queen"),
         LinkUrl("queen"),
         new string[]{
             "Compassion", "Calm", "Comfort"
@@ -197,7 +183,6 @@ public static class Cups
         35,
         14,
         TarotSuits.Cups,
-        ImageUrl("king"),
         LinkUrl("king"),
         new string[]{
             "Compassion", "Control", "Balance"

@@ -2,7 +2,7 @@ namespace Tarot.Models;
 
 public static class MajorArcana
 {
-    static string ImageUrl(string card) => $"https://cdn.shopify.com/s/files/1/1325/0879/files/{card}-meaning-rider-waite-tarot-major-arcana_large.jpg";
+    
     static string LinkUrl(string card) => $"https://labyrinthos.co/blogs/tarot-card-meanings-list/{card}-meaning-major-arcana-tarot-card-meanings";
 
     public static List<MajorTarotCard> Cards => new()
@@ -43,7 +43,6 @@ public static class MajorArcana
         0,
         TarotPlanets.Uranus,
         TarotElements.Air,
-        ImageUrl("00-the-fool"),
         LinkUrl("the-fool"),
         new string[]{
             "Innocence", "New Beginnings", "Free Spirit"
@@ -58,7 +57,6 @@ public static class MajorArcana
         1,
         TarotPlanets.Mercury,
         TarotElements.Air,
-        ImageUrl("01-magician"),
         LinkUrl("the-magician"),
         new string[]{
             "Willpower", "Desire", "Creation", "Manifestation"
@@ -73,7 +71,6 @@ public static class MajorArcana
         2,
         TarotPlanets.Moon,
         TarotElements.Water,
-        ImageUrl("02-high-priestess"),
         LinkUrl("the-high-priestess"),
         new string[]{
             "Intuition", "Unconscious", "Inner Voice"
@@ -88,7 +85,6 @@ public static class MajorArcana
         3,
         TarotPlanets.Venus,
         TarotElements.Earth,
-        ImageUrl("03-empress"),
         LinkUrl("the-empress"),
         new string[]{
             "Motherhood", "Fertility", "Nature"
@@ -103,7 +99,6 @@ public static class MajorArcana
         4,
         TarotZodiacs.Aries,
         TarotElements.Fire,
-        ImageUrl("04-emperor"),
         LinkUrl("the-emperor"),
         new string[]{
             "Authority", "Structure", "Control", "Fatherhood"
@@ -118,7 +113,6 @@ public static class MajorArcana
         5,
         TarotZodiacs.Taurus,
         TarotElements.Earth,
-        ImageUrl("05-hierophant"),
         LinkUrl("the-hierophant"),
         new string[]{
             "Tradition", "Conformity", "Morality & Ethics"
@@ -133,7 +127,6 @@ public static class MajorArcana
         6,
         TarotZodiacs.Gemini,
         TarotElements.Air,
-        ImageUrl("06-lovers"),
         LinkUrl("the-lovers"),
         new string[]{
             "Partnerships", "Union", "Duality"
@@ -148,7 +141,6 @@ public static class MajorArcana
         7,
         TarotZodiacs.Cancer,
         TarotElements.Water,
-        ImageUrl("07-chariot"),
         LinkUrl("the-chariot"),
         new string[]{
             "Direction", "Control", "Willpower"
@@ -163,7 +155,6 @@ public static class MajorArcana
         8,
         TarotZodiacs.Leo,
         TarotElements.Fire,
-        ImageUrl("08-strength"),
         LinkUrl("strength"),
         new string[]{
             "Bravery", "Compassion", "Focus", "Inner Strength"
@@ -178,7 +169,6 @@ public static class MajorArcana
         9,
         TarotZodiacs.Virgo,
         TarotElements.Earth,
-        ImageUrl("09-hermit"),
         LinkUrl("the-hermit"),
         new string[]{
             "Contemplation", "Search for Truth", "Inner Guidance"
@@ -193,7 +183,6 @@ public static class MajorArcana
         10,
         TarotPlanets.Jupiter,
         TarotElements.Fire,
-        ImageUrl("10-wheel-of-fortune"),
         LinkUrl("the-wheel-of-fortune"),
         new string[]{
             "Change", "Cycles", "Inevitable Fate"
@@ -208,7 +197,6 @@ public static class MajorArcana
         11,
         TarotZodiacs.Libra,
         TarotElements.Air,
-        ImageUrl("11-justice"),
         LinkUrl("justice"),
         new string[]{
             "Cause and Effect", "Clarity", "Truth"
@@ -223,7 +211,6 @@ public static class MajorArcana
         12,
         TarotPlanets.Neptune,
         TarotElements.Water,
-        ImageUrl("12-the-hanged-man"),
         LinkUrl("the-hanged-man"),
         new string[]{
             "Sacrifice", "Release", "Martyrdom"
@@ -238,7 +225,6 @@ public static class MajorArcana
         13,
         TarotZodiacs.Scorpio,
         TarotElements.Water,
-        ImageUrl("13-death"),
         LinkUrl("death"),
         new string[]{
             "End of Cycle", "New Beginnings", "Change", "Metamorphosis"
@@ -253,7 +239,6 @@ public static class MajorArcana
         14,
         TarotZodiacs.Sagittarius,
         TarotElements.Fire,
-        ImageUrl("14-temperance"),
         LinkUrl("temperance"),
         new string[]{
             "Middle Path", "Patience", "Finding Meaning"
@@ -268,7 +253,6 @@ public static class MajorArcana
         15,
         TarotZodiacs.Capricorn,
         TarotElements.Earth,
-        ImageUrl("15-devil"),
         LinkUrl("the-devil"),
         new string[]{
             "Excess", "Materialism", "Playfulness"
@@ -283,7 +267,6 @@ public static class MajorArcana
         16,
         TarotPlanets.Mars,
         TarotElements.Fire,
-        ImageUrl("16-tower"),
         LinkUrl("the-tower"),
         new string[]{
             "Sudden Upheaval", "Broken Pride", "Disaster"
@@ -298,7 +281,6 @@ public static class MajorArcana
         17,
         TarotZodiacs.Aquarius,
         TarotElements.Air,
-        ImageUrl("17-star"),
         LinkUrl("the-star"),
         new string[]{
             "Hope", "Faith", "Rejuvenation"
@@ -313,7 +295,6 @@ public static class MajorArcana
         18,
         TarotZodiacs.Pisces,
         TarotElements.Water,
-        ImageUrl("18-moon"),
         LinkUrl("the-moon"),
         new string[]{
             "Unconscious", "Illusions", "Intuition"
@@ -328,7 +309,6 @@ public static class MajorArcana
         19,
         TarotPlanets.Sun,
         TarotElements.Fire,
-        ImageUrl("19-sun"),
         LinkUrl("the-sun"),
         new string[]{
             "Joy", "Success", "Celebration"
@@ -343,7 +323,6 @@ public static class MajorArcana
         20,
         TarotPlanets.Pluto,
         TarotElements.Fire,
-        ImageUrl("20-judgment"),
         LinkUrl("judgement"),
         new string[]{
             "Reflection", "Reckoning", "Awakening"
@@ -358,7 +337,6 @@ public static class MajorArcana
         21,
         TarotPlanets.Saturn,
         TarotElements.Earth,
-        ImageUrl("21-the-world"),
         LinkUrl("the-world"),
         new string[]{
             "Fulfillment", "Harmony", "Completion"

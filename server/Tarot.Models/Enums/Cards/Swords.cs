@@ -2,7 +2,6 @@ namespace Tarot.Models;
 
 public static class Swords
 {
-    static string ImageUrl(string card) => $"https://cdn.shopify.com/s/files/1/1325/0879/files/{card}-of-swords-rider-waite-tarot_large.jpg";
     static string LinkUrl(string card) => $"https://labyrinthos.co/blogs/tarot-card-meanings-list/{card}-of-swords-meaning-tarot-card-meanings";
 
     public static List<MinorTarotCard> Cards => new()
@@ -15,7 +14,6 @@ public static class Swords
         50,
         1,
         TarotSuits.Swords,
-        ImageUrl("01-ace"),
         LinkUrl("ace"),
         new string[]{
             "Breakthrough", "Clarity", "Sharp Mind"
@@ -29,7 +27,6 @@ public static class Swords
         51,
         2,
         TarotSuits.Swords,
-        ImageUrl("02-two"),
         LinkUrl("two"),
         new string[]{
             "Difficult Choices", "Indecision", "Stalemate"
@@ -44,7 +41,6 @@ public static class Swords
         52,
         3,
         TarotSuits.Swords,
-        ImageUrl("03-three"),
         LinkUrl("three"),
         new string[]{
             "Heartbreak", "Suffering", "Grief"
@@ -58,7 +54,6 @@ public static class Swords
         53,
         4,
         TarotSuits.Swords,
-        ImageUrl("04-four"),
         LinkUrl("four"),
         new string[]{
             "Rest", "Restoration", "Contemplation"
@@ -72,7 +67,6 @@ public static class Swords
         54,
         5,
         TarotSuits.Swords,
-        ImageUrl("05-five"),
         LinkUrl("five"),
         new string[]{
             "Unbridled Ambition", "Win at All Costs", "Sneakiness"
@@ -86,7 +80,6 @@ public static class Swords
         55,
         6,
         TarotSuits.Swords,
-        ImageUrl("06-six"),
         LinkUrl("six"),
         new string[]{
             "Transition", "Leaving Behind", "Moving On"
@@ -100,7 +93,6 @@ public static class Swords
         56,
         7,
         TarotSuits.Swords,
-        ImageUrl("07-seven"),
         LinkUrl("seven"),
         new string[]{
             "Deception", "Trickery", "Tactics & Strategy"
@@ -114,7 +106,6 @@ public static class Swords
         57,
         8,
         TarotSuits.Swords,
-        ImageUrl("08-eight"),
         LinkUrl("eight"),
         new string[]{
             "Imprisonment", "Entrapment", "Self-Victimization"
@@ -128,7 +119,6 @@ public static class Swords
         58,
         9,
         TarotSuits.Swords,
-        ImageUrl("09-nine"),
         LinkUrl("nine"),
         new string[]{
             "Anxiety", "Hopelessness", "Trauma"
@@ -142,7 +132,6 @@ public static class Swords
         59,
         10,
         TarotSuits.Swords,
-        ImageUrl("10-ten"),
         LinkUrl("ten"),
         new string[]{
             "Failure", "Collapse", "Defeat"
@@ -156,7 +145,6 @@ public static class Swords
         60,
         11,
         TarotSuits.Swords,
-        ImageUrl("page"),
         LinkUrl("page"),
         new string[]{
             "Curiosity", "Restlessness", "Mental Energy"
@@ -170,7 +158,6 @@ public static class Swords
         61,
         12,
         TarotSuits.Swords,
-        ImageUrl("knight"),
         LinkUrl("knight"),
         new string[]{
             "Action", "Impulsiveness", "Defending Beliefs"
@@ -184,7 +171,6 @@ public static class Swords
         62,
         13,
         TarotSuits.Swords,
-        ImageUrl("queen"),
         LinkUrl("queen"),
         new string[]{
             "Complexity", "Perceptiveness", "Clear Mindedness"
@@ -198,7 +184,6 @@ public static class Swords
         63,
         14,
         TarotSuits.Swords,
-        ImageUrl("king"),
         LinkUrl("king"),
         new string[]{
             "Head Over Heart", "Discipline", "Truth"
