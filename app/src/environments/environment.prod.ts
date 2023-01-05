@@ -1,4 +1,4 @@
 export const environment = {
-    server: 'http://localhost:5000/',
-    api: 'http://localhost:5000/api/'
+    server: 'https://jps-tarot-api.azurewebsites.net/',
+    api: 'https://jps-tarot-api.azurewebsites.net/api/'
 }
