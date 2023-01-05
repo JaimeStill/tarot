@@ -3,6 +3,8 @@
 ## Notes
 
 [Tarot Reversals UI CodePen](https://codepen.io/JaimeStill/pen/gOjwYwP)
+[Tarot Card Flip UI CodePen](https://codepen.io/JaimeStill/pen/RwBGQMP)
+[Tarot Flip with Reversals UI CodePen](https://codepen.io/JaimeStill/pen/ExpgrxE)
 
 ## Sources
 
