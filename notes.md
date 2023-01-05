@@ -1,12 +1,12 @@
 # Notes
 
-## Notes
+## Pens
 
 [Tarot Reversals UI CodePen](https://codepen.io/JaimeStill/pen/gOjwYwP)
 [Tarot Card Flip UI CodePen](https://codepen.io/JaimeStill/pen/RwBGQMP)
 [Tarot Flip with Reversals UI CodePen](https://codepen.io/JaimeStill/pen/ExpgrxE)
 
-### Deck Images
+## Deck Images
 
 [Searge/tarot](https://github.com/Searge/tarot)
 [metabismuth/tarot-json](https://github.com/metabismuth/tarot-json)

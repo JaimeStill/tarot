@@ -40,6 +40,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseStaticFiles();
 app.UseRouting();
 app.UseCors();
 app.MapControllers();
