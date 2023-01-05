@@ -1,5 +1,7 @@
 # Tarot
 
+
+
 **CLI Sample Output**
 ```
 Past:
