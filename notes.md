@@ -1,17 +1,14 @@
 # Notes
 
-Rider Waite Tarot Azure Storage Container: https://ishtarcollective.blob.core.windows.net/rider-waite-tarot/
-
 ## Pens
 
-[Tarot Reversals UI CodePen](https://codepen.io/JaimeStill/pen/gOjwYwP)
-[Tarot Card Flip UI CodePen](https://codepen.io/JaimeStill/pen/RwBGQMP)
-[Tarot Flip with Reversals UI CodePen](https://codepen.io/JaimeStill/pen/ExpgrxE)
+* [Tarot Reversals](https://codepen.io/JaimeStill/pen/gOjwYwP)
+* [Tarot Card Flip](https://codepen.io/JaimeStill/pen/RwBGQMP)
+* [Tarot Flip with Reversals](https://codepen.io/JaimeStill/pen/ExpgrxE)
 
 ## Deck Images
 
-[Searge/tarot](https://github.com/Searge/tarot)
-[metabismuth/tarot-json](https://github.com/metabismuth/tarot-json)
+* [metabismuth/tarot-json](https://github.com/metabismuth/tarot-json)
 
 ## Sources
 
