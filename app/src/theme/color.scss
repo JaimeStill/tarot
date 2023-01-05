@@ -10,7 +10,7 @@
     $background: mat.get-color-from-palette($b, background);
     $app-bar: mat.get-color-from-palette($b, app-bar);
     $card: mat.get-color-from-palette($b, card);
-    $hover: mat-get-color-from-palette($b, hover);
+    $hover: mat.get-color-from-palette($b, hover);
     $status-bar: mat.get-color-from-palette($b, status-bar);
     $tooltip: mat.get-color-from-palette($b, tooltip);
 
@@ -35,10 +35,10 @@
     .color-text { color: $text!important; }
 
     .border { border: 1px solid $base!important; }
-    .border-disabled { color: 1px solid $disabled!important; }
-    .border-divider { color: 1px solid $divider!important; }
-    .border-icon { color: 1px solid $icon!important; }
-    .border-text { color: 1px solid $text!important; }
+    .border-disabled { border: 1px solid $disabled!important; }
+    .border-divider { border: 1px solid $divider!important; }
+    .border-icon { border: 1px solid $icon!important; }
+    .border-text { border: 1px solid $text!important; }
 
     .inverted-color {
         background-color: $text!important;

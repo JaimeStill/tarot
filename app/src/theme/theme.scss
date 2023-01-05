@@ -18,6 +18,6 @@ $light-theme: mat.define-light-theme(palette.get-theme($palette));
     $dark-theme: mat.define-dark-theme(palette.get-theme($palette));
 
     @include style-theme($dark-theme, $palette);
-    @include mat.all-cmoponent-colors($dark-theme);
+    @include mat.all-component-colors($dark-theme);
     @include mat.typography-hierarchy($dark-theme);
 }

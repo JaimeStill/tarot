@@ -1,0 +1,15 @@
+<ng-container *ngIf="deck.length > 0">
+    <section class="deck-grid p4 m4">
+        <div *ngFor="let card of deck"
+             class="bg-card border-divider m4 rounded"
+             flexContainer
+             flexDirection="column"
+             flexMain="start"
+             flexCross="center"
+             #deck>
+            <img [src]="card.image"
+                 [alt]="card.name"
+                 [width]="deck.clientWidth - 8">
+        </div>
+    </section>
+</ng-container>

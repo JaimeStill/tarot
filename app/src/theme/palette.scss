@@ -11,7 +11,7 @@
         "green": (
             "palette": mat.define-palette(mat.$light-green-palette, 500),
             "color": mat.get-color-from-palette(mat.$light-green-palette, 500),
-            "contrast": mat.get-contrast-color-from-palette(mat.$light-green-palette, 500)            
+            "contrast": mat.get-contrast-color-from-palette(mat.$light-green-palette, 500)
         ),
         "blue": (
             "palette": mat.define-palette(mat.$light-blue-palette, 200),
@@ -28,6 +28,8 @@
     $palette: map.set($palette, "primary", map.get($palette, "green"));
     $palette: map.set($palette, "accent", map.get($palette, "blue"));
     $palette: map.set($palette, "warn", map.get($palette, "red"));
+
+    @return $palette;
 }
 
 @function get-theme($palette) {

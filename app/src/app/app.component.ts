@@ -1,20 +1,13 @@
-import { Component, OnInit } from '@angular/core';
-import { TarotCard } from './models';
-import { TarotApi } from './services';
+import { Component } from '@angular/core';
+import { ThemeService } from './services';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app',
   templateUrl: 'app.component.html',
-  providers: [TarotApi]
+  styleUrls: ['app.component.scss']
 })
-export class AppComponent implements OnInit {
-  deck: TarotCard[] = new Array<TarotCard>();
-
-  constructor(
-    private tarot: TarotApi
-  ) { }
-  
-  async ngOnInit(): Promise<void> {
-    this.deck = await this.tarot.get();
-  }
+export class AppComponent {
+    constructor(
+        public themer: ThemeService
+    ) { }
 }

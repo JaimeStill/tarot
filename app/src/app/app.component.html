@@ -1,10 +1,18 @@
-<p class="mat-headline-5">Tarot Cards</p>
-<ng-container *ngIf="deck.length > 0">
-    <section class="grid">
-        <div *ngFor="let card of deck"
-             class="card">
-            <p class="mat-headline-6">{{card.name}}</p>
-        </div>
-    </section>
-</ng-container>
-<router-outlet></router-outlet>
+<div class="grid full-height mat-app-background"
+     [ngClass]="themer.isLight ? 'app-light' : 'app-dark'">
+    <mat-toolbar>
+        <span class="cursor-pointer"
+              routerLink="/">Tarot</span>
+        <span flexChild></span>
+        <button mat-icon-button
+                [ngClass]="themer.isLight ? 'color-yellow' : 'color-text'"
+                (click)="themer.toggleTheme()">
+            <mat-icon>
+                {{themer.isLight ? 'brightness_5' : 'brightness_3'}}
+            </mat-icon>
+        </button>
+    </mat-toolbar>
+    <div class="overflow">
+        <router-outlet></router-outlet>
+    </div>
+</div>
