@@ -1,5 +1,7 @@
 # Notes
 
+Rider Waite Tarot Azure Storage Container: https://ishtarcollective.blob.core.windows.net/rider-waite-tarot/
+
 ## Pens
 
 [Tarot Reversals UI CodePen](https://codepen.io/JaimeStill/pen/gOjwYwP)
