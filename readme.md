@@ -1,5 +1,7 @@
 # Tarot
 
+[![jps-tarot-api - Azure Web App Build and Deploy](https://github.com/JaimeStill/tarot/actions/workflows/main_jps-tarot-api.yml/badge.svg)](https://github.com/JaimeStill/tarot/actions/workflows/main_jps-tarot-api.yml)
+
 > This project is a work in progress
 
 * [App](#app)
