@@ -7,6 +7,11 @@ on:
   push:
     branches:
       - main
+    paths-ignore:
+      - app/*
+      - .gitignore
+      - notes.md
+      - readme.md
   workflow_dispatch:
 
 jobs:
@@ -24,15 +29,17 @@ jobs:
 
       - name: Build with dotnet
         run: dotnet build --configuration Release
+        working-directory: server
 
       - name: dotnet publish
         run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
+        working-directory: server/Tarot.Api
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
         with:
-          name: .net-app
-          path: ${{env.DOTNET_ROOT}}/myapp
+          name: .tarot-api
+          path: ${{env.DOTNET_ROOT}}/tarot-api
 
   deploy:
     runs-on: windows-latest
@@ -45,7 +52,7 @@ jobs:
       - name: Download artifact from build job
         uses: actions/download-artifact@v2
         with:
-          name: .net-app
+          name: .tarot-api
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
