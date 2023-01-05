@@ -56,31 +56,31 @@ Demonstrates a simple 3 card draw for testing purposes.
 **CLI Sample Output**
 ```
 Past:
-Card: 2 of Pentacles
+Card: The Sun
 Orientation: Reversed
-Element: Earth
-Zodiacs: Taurus, Virgo, Capricorn
-Keywords: Loss of Balance, Disorganized, Overwhelmed
-Image: https://cdn.shopify.com/s/files/1/1325/0879/files/two-of-pentacles-meaning-rider-waite-tarot_large.jpg
-Link: https://labyrinthos.co/blogs/tarot-card-meanings-list/two-of-pentacles-meaning-tarot-card-meanings
+Element: Fire
+Planet: Sun
+Keywords: Negativity, Depression, Sadness
+Image: https://ishtarcollective.blob.core.windows.net/rider-waite-tarot/major-19.jpg
+Link: https://labyrinthos.co/blogs/tarot-card-meanings-list/the-sun-meaning-major-arcana-tarot-card-meanings
 
 Present:
-Card: Queen of Wands
-Orientation: Upright
-Element: Fire
-Zodiacs: Aries, Leo, Sagittarius
-Keywords: Courage, Determination, Joy
-Image: https://cdn.shopify.com/s/files/1/1325/0879/files/queen-of-wands-rider-waite-tarot_large.jpg
-Link: https://labyrinthos.co/blogs/tarot-card-meanings-list/queen-of-wands-meaning-tarot-card-meanings
-
-Future:
-Card: 5 of Wands
+Card: Page of Wands
 Orientation: Reversed
 Element: Fire
 Zodiacs: Aries, Leo, Sagittarius
-Keywords: Avoiding Conflict, Respect Differences
-Image: https://cdn.shopify.com/s/files/1/1325/0879/files/5-of-wands-rider-waite-tarot_large.jpg
-Link: https://labyrinthos.co/blogs/tarot-card-meanings-list/five-of-wands-meaning-tarot-card-meanings
+Keywords: Lack of Direction, Procrastination, Creating Conflict
+Image: https://ishtarcollective.blob.core.windows.net/rider-waite-tarot/wands-11.jpg
+Link: https://labyrinthos.co/blogs/tarot-card-meanings-list/page-of-wands-meaning-tarot-card-meanings
+
+Future:
+Card: 5 of Swords
+Orientation: Upright
+Element: Air
+Zodiacs: Gemini, Libra, Aquarius
+Keywords: Unbridled Ambition, Win at All Costs, Sneakiness
+Image: https://ishtarcollective.blob.core.windows.net/rider-waite-tarot/swords-5.jpg
+Link: https://labyrinthos.co/blogs/tarot-card-meanings-list/five-of-swords-meaning-tarot-card-meanings
 ```
 
 ## Rider Waite Tarot Images
