@@ -1,5 +1,9 @@
 # Notes
 
+## Font Candidates
+
+* [Caveat Brush](https://fonts.google.com/specimen/Caveat+Brush?preview.text=The%20Magician%20THE%20MAGICIAN&preview.text_type=custom&category=Handwriting)
+
 ## Pens
 
 * [Tarot Reversals](https://codepen.io/JaimeStill/pen/gOjwYwP)
