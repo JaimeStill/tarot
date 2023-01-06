@@ -4,14 +4,14 @@
 @function get-palette() {
     $palette: (
         "red": (
-            "palette": mat.define-palette(mat.$deep-orange-palette, 700),
-            "color": mat.get-color-from-palette(mat.$deep-orange-palette, 700),
-            "contrast": mat.get-contrast-color-from-palette(mat.$deep-orange-palette, 700)
+            "palette": mat.define-palette(mat.$deep-orange-palette, 800),
+            "color": mat.get-color-from-palette(mat.$deep-orange-palette, 800),
+            "contrast": mat.get-contrast-color-from-palette(mat.$deep-orange-palette, 800)
         ),
         "green": (
-            "palette": mat.define-palette(mat.$light-green-palette, 500),
-            "color": mat.get-color-from-palette(mat.$light-green-palette, 500),
-            "contrast": mat.get-contrast-color-from-palette(mat.$light-green-palette, 500)
+            "palette": mat.define-palette(mat.$light-green-palette, 300),
+            "color": mat.get-color-from-palette(mat.$light-green-palette, 300),
+            "contrast": mat.get-contrast-color-from-palette(mat.$light-green-palette, 300)
         ),
         "blue": (
             "palette": mat.define-palette(mat.$light-blue-palette, 200),

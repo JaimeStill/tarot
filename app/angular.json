@@ -108,15 +108,15 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "port": 3000,
-            "disableHostCheck": true
+            "port": 3000
           },
           "configurations": {
             "production": {
               "browserTarget": "tarot:build:production"
             },
             "cloud": {
-              "browserTarget": "tarot:build:cloud"
+              "browserTarget": "tarot:build:cloud",
+              "disableHostCheck": true
             },
             "development": {
               "browserTarget": "tarot:build:development"

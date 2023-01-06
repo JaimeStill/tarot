@@ -1,0 +1,13 @@
+@use '@angular/material' as mat;
+
+@for $index from 0 through 10 {
+    $i: $index * 2;
+    .el#{$i} {
+        @include mat.elevation-transition;
+        @include mat.elevation($i);
+
+        &:hover {
+            @include mat.elevation($i + 4);
+        }
+    }
+}
