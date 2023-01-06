@@ -1,4 +1,8 @@
-<ng-container *ngIf="deck.length > 0">
+<ng-template #loading>
+    <mat-progress-bar mode="indeterminate"
+                      color="accent"></mat-progress-bar>
+</ng-template>
+<ng-container *ngIf="deck.length > 0 else loading">
     <section class="deck-grid p4 m4">
         <div *ngFor="let card of deck"
              class="bg-card border-divider m4 rounded deck-card el6"

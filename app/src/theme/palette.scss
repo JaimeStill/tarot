@@ -22,6 +22,11 @@
             "palette": mat.define-palette(mat.$yellow-palette, 500),
             "color": mat.get-color-from-palette(mat.$yellow-palette, 500),
             "contrast": mat.get-contrast-color-from-palette(mat.$yellow-palette, 500)
+        ),
+        "amber": (
+            "palette": mat.define-palette(mat.$amber-palette, A700),
+            "color": mat.get-color-from-palette(mat.$amber-palette, A700),
+            "contrast": mat.get-contrast-color-from-palette(mat.$amber-palette, A700)
         )
     );
 
