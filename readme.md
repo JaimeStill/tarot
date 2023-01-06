@@ -3,7 +3,7 @@
 Name | Status | URL
 -----|--------|-----
 API | [![Azure API - Build and Deploy](https://github.com/JaimeStill/tarot/actions/workflows/main_jps-tarot-api.yml/badge.svg)](https://github.com/JaimeStill/tarot/actions/workflows/main_jps-tarot-api.yml) | https://jps-tarot-api.azurewebsites.net/swagger
-APP |  [![Azure App - Build and Deploy](https://github.com/JaimeStill/tarot/actions/workflows/main_jps-tarot-app.yml/badge.svg)](https://github.com/JaimeStill/tarot/actions/workflows/main_jps-tarot-app.yml) | https://jps-tarot-app.azurewebsites.net/
+App |  [![Azure App - Build and Deploy](https://github.com/JaimeStill/tarot/actions/workflows/main_jps-tarot-app.yml/badge.svg)](https://github.com/JaimeStill/tarot/actions/workflows/main_jps-tarot-app.yml) | https://jps-tarot-app.azurewebsites.net/
 
 > This project is a work in progress
 
