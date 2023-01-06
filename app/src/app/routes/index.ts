@@ -13,6 +13,6 @@ export const RoutePaths: Route[] = [
     { path: 'major/:name', component: MajorRoute },
     { path: 'minor/:name', component: MinorRoute },
     { path: 'tarot', component: TarotRoute },
-    { path: '', redirectTo: 'tarot', component: TarotRoute },
+    { path: '', redirectTo: 'tarot', pathMatch: 'full' },
     { path: '**', redirectTo: 'tarot', pathMatch: 'full' }
 ]

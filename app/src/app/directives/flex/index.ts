@@ -1,7 +1,9 @@
-import { FlexChildDirective } from './flex-child.directive';
-import { FlexContainerDirective } from './flex-container.directive';
+import { FlexDirective } from './flex.directive';
+import { FlexAlignDirective } from './flex-align.directive';
+import { FlexBoxDirective } from './flex-box.directive';
 
 export const FlexDirectives = [
-    FlexChildDirective,
-    FlexContainerDirective
+    FlexDirective,
+    FlexAlignDirective,
+    FlexBoxDirective
 ];

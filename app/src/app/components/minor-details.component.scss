@@ -1,18 +1,42 @@
 section.card-grid {
     display: grid;
     grid-template-columns: auto 1fr;
+    gap: 4px;
+    padding: 4px;
+    justify-items: start;
+}
+
+div.deck-card {
+    align-self: start;
+}
+
+div.card-details p,
+div.card-details img {
+    margin: 8px;
 }
 
 div.deck-card img {
     width: 100%;
 }
 
-div.zodiac-container {
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-}
-
 div.zodiac-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-between;
+}
+
+@media (max-width: 856px) {
+    section.card-grid {
+        display: grid;
+        grid-template-columns: initial;
+        grid-template-rows: auto 1fr;
+        gap: 4px;
+        padding: 4px;
+        justify-items: center;
+    }
+
+    div.card-details {
+        max-width: 358px;
+    }
 }

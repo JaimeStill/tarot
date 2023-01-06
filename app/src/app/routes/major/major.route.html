@@ -5,8 +5,7 @@
 <ng-container *ngIf="card else loading">
     <section class="deck-grid p4 m4">
         <div class="cursor-pointer bg-card border-divider rounded deck-card el6 m4"
-             flexContainer
-             flexDirection="column"
+             flexBox="column"
              flexMain="start"
              flexCross="center">
             <img [src]="card.image"

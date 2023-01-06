@@ -15,15 +15,15 @@ import {
 } from '../../types/flex';
 
 @Directive({
-    selector: '[flexContainer]'
+    selector: '[flexBox]'
 })
-export class FlexContainerDirective implements OnChanges {
+export class FlexBoxDirective implements OnChanges {
     // align-content
     @Input() flexAlign: FxAlign = 'normal';
+    // flex-direction
+    @Input() flexBox: FxDirection = 'row';
     // align-items
     @Input() flexCross: FxCross = 'normal';
-    // flex-direction
-    @Input() flexDirection: FxDirection = 'row';
     // gap
     @Input() flexGap: string = 'normal';
     // justify-content
@@ -38,8 +38,8 @@ export class FlexContainerDirective implements OnChanges {
     }
 
     ngOnChanges(changes: SimpleChanges): void {
-        if (changes['flexDirection'])
-            this.style().flexDirection = this.flexDirection;
+        if (changes['flexBox'])
+            this.style().flexDirection = this.flexBox || 'row';
 
         if (changes['flexWrap'])
             this.style().flexWrap = this.flexWrap;
