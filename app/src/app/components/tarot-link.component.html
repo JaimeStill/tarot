@@ -1,0 +1,6 @@
+<div class="cursor-pointer deck-card"
+         [ngClass]="cardStyle"
+         (click)="view.emit(card)">
+    <img [src]="card.image"
+         [alt]="card.name">
+</div>

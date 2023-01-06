@@ -1,17 +1,11 @@
 <ng-template #loading>
     <mat-progress-bar mode="indeterminate"
-                      color="accent"></mat-progress-bar>
+                      color="primary"></mat-progress-bar>
 </ng-template>
 <ng-container *ngIf="deck.length > 0 else loading">
     <section class="deck-grid p4 m4">
-        <div *ngFor="let card of deck"
-             class="bg-card border-divider m4 rounded deck-card el6"
-             flexContainer
-             flexDirection="column"
-             flexMain="start"
-             flexCross="center">
-            <img [src]="card.image"
-                 [alt]="card.name">
-        </div>
+        <tarot-link *ngFor="let card of deck"
+                    [card]="card"
+                    (view)="view($event)"></tarot-link>
     </section>
 </ng-container>

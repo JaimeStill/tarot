@@ -3,6 +3,7 @@ import {
     OnInit
 } from '@angular/core';
 
+import { Router } from '@angular/router';
 import { TarotCard } from '../../models';
 import { TarotApi } from '../../services';
 
@@ -16,6 +17,7 @@ export class TarotRoute implements OnInit {
     deck: TarotCard[] = new Array<TarotCard>();
 
     constructor(
+        private router: Router,
         private tarot: TarotApi
     ) { }
 
@@ -24,4 +26,8 @@ export class TarotRoute implements OnInit {
     }
 
     setWidth = (deckWidth: number) => Math.floor(deckWidth / 3);
+
+    view = (card: TarotCard) => this.router.navigate([
+        ...(this.tarot.routeEncode(card))
+    ]);
 }

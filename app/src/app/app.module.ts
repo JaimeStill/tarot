@@ -10,11 +10,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { MaterialModule } from './material.module';
 import { AppComponent } from './app.component';
+
+import { Components } from './components';
 import { Directives } from './directives';
 
 @NgModule({
     declarations: [
         AppComponent,
+        ...Components,
         ...Directives,
         ...Routes
     ],

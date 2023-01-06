@@ -2,7 +2,7 @@ namespace Tarot.Models;
 
 public static class MajorArcana
 {
-    
+
     static string LinkUrl(string card) => $"https://labyrinthos.co/blogs/tarot-card-meanings-list/{card}-meaning-major-arcana-tarot-card-meanings";
 
     public static List<MajorTarotCard> Cards => new()
@@ -35,8 +35,7 @@ public static class MajorArcana
         Cards.Where(x => x.AstrologyId == astrology.Id);
 
     public static IEnumerable<MajorTarotCard> GetByElement(TarotElement element) =>
-        Cards.Where(x => x.ElementId == element.Id);    
-
+        Cards.Where(x => x.ElementId == element.Id);
 
     public static MajorTarotCard TheFool => new(
         "The Fool",

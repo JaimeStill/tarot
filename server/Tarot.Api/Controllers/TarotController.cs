@@ -42,9 +42,17 @@ public class TarotController : Controller
     public ActionResult<MajorTarotCard> GetMajorCard([FromRoute]int id) =>
         Ok(MajorArcana.Cards.Get(id));
 
+    [HttpGet("[action]/{name}")]
+    public ActionResult<MajorTarotCard> GetMajorByName([FromRoute]string name) =>
+        Ok(MajorArcana.Cards.Get(name));
+
     [HttpGet("[action]/{id:int}")]
     public ActionResult<MinorTarotCard> GetMinorCard([FromRoute]int id) =>
         Ok(MinorArcana.Cards.Get(id));
+
+    [HttpGet("[action]/{name}")]
+    public ActionResult<MinorTarotCard> GetMinorByName([FromRoute]string name) =>
+        Ok(MinorArcana.Cards.Get(name));
 
     [HttpPost("[action]")]
     public IActionResult GetBySuit([FromBody]TarotSuit suit) =>

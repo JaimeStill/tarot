@@ -1,0 +1,59 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "run-api",
+            "command": "dotnet",
+            "type": "shell",
+            "isBackground": true,
+            "options": {
+                "cwd": "${workspaceFolder}/server/Tarot.Api/"
+            },
+            "args": [
+                "watch",
+                "run"
+            ],
+            "presentation": {
+                "panel": "dedicated"
+            },
+            "problemMatcher": {
+                "owner": "dotnet",
+                "pattern": "$msCompile",
+                "background": {
+                    "activeOnStart": true,
+                    "beginsPattern": {
+                        "regexp": "dotnet watch .* Building..."
+                    },
+                    "endsPattern": {
+                        "regexp": "Now listening on: http://localhost:5000"
+                    }
+                }
+            }
+        },
+        {
+            "label": "run-app",
+            "type": "npm",
+            "script": "start",
+            "isBackground": true,
+            "options": {
+                "cwd": "${workspaceFolder}/app/"
+            },
+            "presentation": {
+                "panel": "dedicated"
+            },
+            "problemMatcher": {
+                "owner": "typescript",
+                "pattern": "$tsc",
+                "background": {
+                    "activeOnStart": true,
+                    "beginsPattern": {
+                        "regexp": "(.*?)"
+                    },
+                    "endsPattern": {
+                        "regexp": "Compiled successfully"
+                    }
+                }
+            }
+        }
+    ]
+}

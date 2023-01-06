@@ -19,11 +19,19 @@ export class TarotApi {
         private http: HttpClient
     ) { }
 
+    routeEncode = (card: TarotCard): [ string, string ] => ([
+        card.type.toLowerCase(),
+        card.name.toLowerCase().replaceAll(' ', '-')
+    ]);
+
+    routeDecode = (name: string): string =>
+        name.replaceAll('-', ' ');
+
     get = (): Promise<TarotCard[]> =>
         firstValueFrom(
             this.http.get<TarotCard[]>(`${this.api}get`)
         );
-        
+
     getShuffled = (shuffles: number | null): Promise<TarotCard[]> => {
         const url = new URL(`${this.api}getShuffled`);
 
@@ -70,9 +78,19 @@ export class TarotApi {
             this.http.get<MajorTarotCard>(`${this.api}getMajorCard/${id}`)
         );
 
+    getMajorByName = (name: string): Promise<MajorTarotCard> =>
+        firstValueFrom(
+            this.http.get<MajorTarotCard>(`${this.api}getMajorByName/${name}`)
+        );
+
     getMinorCard = (id: number): Promise<MinorTarotCard> =>
         firstValueFrom(
             this.http.get<MinorTarotCard>(`${this.api}getMinorCard/${id}`)
+        );
+
+    getMinorByName = (name: string): Promise<MinorTarotCard> =>
+        firstValueFrom(
+            this.http.get<MinorTarotCard>(`${this.api}getMinorByName/${name}`)
         );
 
     getBySuit = (suit: TarotSuit): Promise<MinorTarotCard[]> =>

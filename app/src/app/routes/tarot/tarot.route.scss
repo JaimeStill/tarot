@@ -1,10 +1,18 @@
 section.deck-grid {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(12, 1fr);
 }
 
-section.deck-grid img {
-    width: 100%;
+@media (max-width: 2000px) {
+    section.deck-grid {
+        grid-template-columns: repeat(10, 1fr);
+    }
+}
+
+@media (max-width: 1600px) {
+    section.deck-grid {
+        grid-template-columns: repeat(8, 1fr);
+    }
 }
 
 @media (max-width: 1200px) {
