@@ -8,12 +8,12 @@ on:
     branches:
       - main
     paths-ignore:
-      - .github/workflows/main_jps-tarot-api.yml
-      - server/*
-      - .editorconfig
-      - .gitignore
-      - notes.md
-      - readme.md
+      - '.github/workflows/main_jps-tarot-api.yml'
+      - 'server/**'
+      - '.editorconfig'
+      - '.gitignore'
+      - 'notes.md'
+      - 'readme.md'
   workflow_dispatch:
 
 jobs:
