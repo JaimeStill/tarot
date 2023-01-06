@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: jps-tarot-app - Azure Web App Build and Deploy
+name: Azure App - Build and Deploy
 
 on:
   push:
@@ -28,7 +28,7 @@ jobs:
         with:
           node-version: '18.x'
 
-      - name: npm install, build, and test
+      - name: npm install and build
         run: |
           npm install
           npm run build-prod --if-present
@@ -38,7 +38,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: tarot-app
-          path: ./tarot-app
+          path: ./app/dist/tarot
 
   deploy:
     runs-on: ubuntu-latest
