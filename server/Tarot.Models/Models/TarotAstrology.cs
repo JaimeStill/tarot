@@ -3,6 +3,7 @@ namespace Tarot.Models;
 public abstract class TarotAstrology : TarotBase
 {
     public string Type { get; }
+    public string Image => IconUrl(Name.ToLower());
     public abstract string Name { get; }
     public abstract string[] Keywords { get; }
 

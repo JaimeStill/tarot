@@ -3,14 +3,5 @@
                       color="primary"></mat-progress-bar>
 </ng-template>
 <ng-container *ngIf="card else loading">
-    <section class="deck-grid p4 m4">
-        <div class="cursor-pointer bg-card border-divider rounded deck-card el6 m4"
-             flexContainer
-             flexDirection="column"
-             flexMain="start"
-             flexCross="center">
-            <img [src]="card.image"
-                 [alt]="card.name">
-        </div>
-    </section>
+    <minor-details [card]="card"></minor-details>
 </ng-container>

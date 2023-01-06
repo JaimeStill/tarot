@@ -1,6 +1,10 @@
 <div class="cursor-pointer deck-card"
-         [ngClass]="cardStyle"
-         (click)="view.emit(card)">
+     flexContainer
+     flexDirection="column"
+     flexMain="center"
+     flexCross="center"
+     [ngClass]="cardStyle"
+     (click)="view.emit(card)">
     <img [src]="card.image"
          [alt]="card.name">
 </div>

@@ -34,7 +34,7 @@ public class TarotZodiac : TarotAstrology
         NegativeTraits = negativeTraits;
     }
 
-    public TarotElement Element => TarotElements.Elements.Get(ElementId);    
+    public TarotElement Element => TarotElements.Elements.Get(ElementId);
     public TarotModality Modality => TarotModalities.Modalities.Get(ModalityId);
     public TarotPlanet Ruler => TarotPlanets.Planets.Get(RulerId);
 

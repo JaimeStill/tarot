@@ -7,4 +7,7 @@ public abstract class TarotBase
     {
         Id = id;
     }
+
+    protected static string IconUrl(string icon) =>
+        $"https://ishtarcollective.blob.core.windows.net/symbol-icons/{icon}.svg";
 }

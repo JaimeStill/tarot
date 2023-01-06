@@ -13,7 +13,7 @@ import { FxAlignSelf } from '../../types/flex';
     selector: '[flexChild]'
 })
 export class FlexChildDirective implements OnChanges, OnInit {
-    private readonly FLEX_DEFAULT = '1 1 auto';
+    private readonly FLEX_DEFAULT = '0 1 auto';
 
     // align-self
     @Input() flexAlignSelf: FxAlignSelf = 'auto';

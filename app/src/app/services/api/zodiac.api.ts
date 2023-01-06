@@ -29,18 +29,18 @@ export class ZodiacApi {
             this.http.get<TarotZodiac>(`${this.api}getById/${id}`)
         );
 
-    getByElement = (element: TarotElement): Promise<TarotZodiac> =>
+    getByElement = (element: TarotElement): Promise<TarotZodiac[]> =>
         firstValueFrom(
-            this.http.post<TarotZodiac>(`${this.api}getByElement`, element)
+            this.http.post<TarotZodiac[]>(`${this.api}getByElement`, element)
         );
 
-    getByModality = (modality: TarotModality): Promise<TarotZodiac> =>
+    getByModality = (modality: TarotModality): Promise<TarotZodiac[]> =>
         firstValueFrom(
-            this.http.post<TarotZodiac>(`${this.api}getByModality`, modality)
+            this.http.post<TarotZodiac[]>(`${this.api}getByModality`, modality)
         );
 
-    getByRuler = (ruler: TarotPlanet): Promise<TarotZodiac> =>
+    getByRuler = (ruler: TarotPlanet): Promise<TarotZodiac[]> =>
         firstValueFrom(
-            this.http.post<TarotZodiac>(`${this.api}getByRuler`, ruler)
+            this.http.post<TarotZodiac[]>(`${this.api}getByRuler`, ruler)
         );
 }

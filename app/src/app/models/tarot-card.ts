@@ -14,13 +14,6 @@ export interface TarotCard extends TarotBase {
 }
 
 export interface MajorTarotCard extends TarotCard {
-    suitId: number;
-    value: number;
-
-    suit: TarotSuit;
-}
-
-export interface MinorTarotCard extends TarotCard {
     astrologyId: number;
     elementId: number;
     value: number;
@@ -28,4 +21,11 @@ export interface MinorTarotCard extends TarotCard {
 
     astrology: TarotAstrology;
     element: TarotElement;
+}
+
+export interface MinorTarotCard extends TarotCard {
+    suitId: number;
+    value: number;
+
+    suit: TarotSuit;
 }

@@ -1,0 +1,18 @@
+section.card-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+div.deck-card img {
+    width: 100%;
+}
+
+div.zodiac-container {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+div.zodiac-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}

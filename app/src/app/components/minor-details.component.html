@@ -1,0 +1,80 @@
+<ng-container *ngIf="card">
+    <section class="card-grid">
+        <div class="bg-card border-divider rounded m4 p2 deck-card"
+             flexContainer
+             flexDirection="column"
+             flexMain="center"
+             flexCross="center">
+            <img [src]="card.image"
+                 [alt]="card.name">
+        </div>
+        <div class="card-details p8 m4"
+             flexContainer
+             flexDirection="column"
+             flexMain="start"
+             flexCross="stretch">
+            <p class="m8 mat-headline-5 marker"
+               flexChild
+               flexAlignSelf="center">{{card.name}}</p>
+            <p class="m8 mat-headline-5 marker">Upright</p>
+            <p class="m8">{{card.upright.join(', ')}}</p>
+            <p class="m8 mat-headline-5 marker">Reversed</p>
+            <p class="m8">{{card.reversed.join(', ')}}</p>
+            <p class="m8 mat-headline-5 marker">Element</p>
+            <div flexContainer
+                 flexMain="space-between"
+                 flexCross="center">
+                <img class="m8"
+                     [src]="card.suit.element.image"
+                     [alt]="card.suit.element.name"
+                     [width]="32">
+                <p class="m8 mat-headline-6">
+                    {{card.suit.element.name}}
+                </p>
+                <p class="m8 mat-headline-6">
+                    {{card.suit.element.polarity}}
+                </p>
+            </div>
+            <p class="m8">
+                {{card.suit.element.keywords.join(', ')}}
+            </p>
+            <p class="m8 mat-headline-5 marker">Zodiac</p>
+            <ng-template #loading>
+                <mat-progress-bar mode="indeterminate"
+                                  color="primary"></mat-progress-bar>
+            </ng-template>
+            <div *ngIf="zodiacs.length > 0 else loading"
+                 class="zodiac-container">
+                <div *ngFor="let zodiac of zodiacs" class="zodiac-grid">
+                    <div flexContainer
+                         flexDirection="column"
+                         flexMain="space-between"
+                         flexCross="center">
+                        <p class="m8 mat-headline-6 marker">{{zodiac.name}}</p>
+                        <img class="m8"
+                             [src]="zodiac.image"
+                             [alt]="zodiac.name"
+                             [width]="32">
+                    </div>
+                    <div flexContainer
+                         flexDirection="column"
+                         flexMain="space-between"
+                         flexCross="center">
+                        <p class="m8 mat-headline-6 marker">Modality</p>
+                        <p class="m8 mat-headline-6">{{zodiac.modality.name}}</p>
+                    </div>
+                    <div flexContainer
+                         flexDirection="column"
+                         flexMain="space-between"
+                         flexCross="center">
+                        <p class="m8 mat-headline-6 marker">{{zodiac.ruler.name}}</p>
+                        <img class="m8"
+                             [src]="zodiac.ruler.image"
+                             [alt]="zodiac.ruler.name"
+                             [width]="32">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</ng-container>
