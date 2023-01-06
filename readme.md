@@ -1,6 +1,9 @@
 # Tarot
 
-[![Azure API - Build and Deploy](https://github.com/JaimeStill/tarot/actions/workflows/main_jps-tarot-api.yml/badge.svg)](https://github.com/JaimeStill/tarot/actions/workflows/main_jps-tarot-api.yml) [![Azure App - Build and Deploy](https://github.com/JaimeStill/tarot/actions/workflows/main_jps-tarot-app.yml/badge.svg)](https://github.com/JaimeStill/tarot/actions/workflows/main_jps-tarot-app.yml)
+Name | Status | URL
+-----|--------|-----
+API | [![Azure API - Build and Deploy](https://github.com/JaimeStill/tarot/actions/workflows/main_jps-tarot-api.yml/badge.svg)](https://github.com/JaimeStill/tarot/actions/workflows/main_jps-tarot-api.yml) | https://jps-tarot-api.azurewebsites.net/swagger
+APP |  [![Azure App - Build and Deploy](https://github.com/JaimeStill/tarot/actions/workflows/main_jps-tarot-app.yml/badge.svg)](https://github.com/JaimeStill/tarot/actions/workflows/main_jps-tarot-app.yml) | https://jps-tarot-app.azurewebsites.net/
 
 > This project is a work in progress
 
@@ -12,6 +15,8 @@
 * [Rider Waite Tarot Images](#rider-waite-tarot-images)
 
 ## App
+
+Azure Hosted App: https://jps-tarot-app.azurewebsites.net/
 
 > In progress
 
