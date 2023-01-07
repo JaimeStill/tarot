@@ -52,7 +52,7 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "web.config"
+              "src/web.config"
             ],
             "styles": [
               "src/theme/theme.scss"
