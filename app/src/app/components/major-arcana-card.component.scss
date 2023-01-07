@@ -1,0 +1,43 @@
+section.card-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 4px;
+    padding: 4px;
+    justify-items: start;
+}
+
+div.deck-card {
+    align-self: start;
+}
+
+div.deck-card img {
+    width: 100%;
+}
+
+div.card-details p,
+div.card-details img {
+    margin: 8px;
+}
+
+div.zodiac-grid {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-between;
+}
+
+@media (max-width: 856px) {
+    section.card-grid {
+        grid-template-columns: initial;
+        grid-template-rows: auto 1fr;
+        justify-items: center;
+    }
+
+    div.card-details {
+        max-width: 358px;
+    }
+
+    div.card-details p,
+    div.card-details img {
+        margin: 4px;
+    }
+}

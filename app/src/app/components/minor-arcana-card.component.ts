@@ -12,12 +12,12 @@ import {
 import { ZodiacApi } from '../services';
 
 @Component({
-    selector: 'minor-details',
-    templateUrl: 'minor-details.component.html',
-    styleUrls: ['minor-details.component.scss'],
+    selector: 'minor-arcana-card',
+    templateUrl: 'minor-arcana-card.component.html',
+    styleUrls: ['minor-arcana-card.component.scss'],
     providers: [ZodiacApi]
 })
-export class MinorDetailsComponent implements OnInit {
+export class MinorArcanaCardComponent implements OnInit {
     zodiacs: TarotZodiac[] = new Array<TarotZodiac>();
     @Input() card!: MinorTarotCard;
 

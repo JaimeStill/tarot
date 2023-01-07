@@ -1,0 +1,65 @@
+<ng-container *ngIf="card">
+    <section class="card-grid">
+        <div class="deck-card bg-card border-divider rounded p2"
+             flexBox="column"
+             flexMain="center"
+             flexCross="center">
+            <img [src]="card.image"
+                 [alt]="card.name">
+        </div>
+        <div class="card-details bg-card border-divider rounded"
+             flexBox="column"
+             flexMain="start"
+             flexCross="stretch">
+            <p class="mat-headline-4 marker"
+               flexAlign="center">{{card.name}}</p>
+            <p class="mat-h2 marker">Upright</p>
+            <p>{{card.upright.join(' - ')}}</p>
+            <p class="mat-h2 marker">Reversed</p>
+            <p>{{card.reversed.join(' - ')}}</p>
+            <p class="mat-h2 marker">Element</p>
+            <div flexBox="row"
+                 flexMain="start"
+                 flexCross="center">
+                <img [src]="card.suit.element.image"
+                     [alt]="card.suit.element.name"
+                     [width]="24">
+                <p class="mat-h2"
+                   flex>
+                    {{card.suit.element.name}}
+                </p>
+                <p class="mat-h2">
+                    {{card.suit.element.polarity}}
+                </p>
+            </div>
+            <p>
+                {{card.suit.element.keywords.join(' - ')}}
+            </p>
+            <p class="mat-h2 marker">Zodiac</p>
+            <ng-template #loading>
+                <mat-progress-bar mode="indeterminate"
+                                  color="primary"></mat-progress-bar>
+            </ng-template>
+            <div *ngIf="zodiacs.length > 0 else loading"
+                 class="zodiac-grid">
+                <ng-container *ngFor="let zodiac of zodiacs">
+                    <div flexBox="row"
+                         flexCross="center">
+                        <img [src]="zodiac.image"
+                             [alt]="zodiac.name"
+                             [width]="24">
+                        <p class="mat-h3">{{zodiac.name}}</p>
+                    </div>
+                    <p class="mat-h3">{{zodiac.dates}}</p>
+                    <div flexBox="row"
+                         flexCross="center">
+                        <img [src]="zodiac.ruler.image"
+                             [alt]="zodiac.ruler.name"
+                             [width]="24">
+                        <p class="mat-h3">{{zodiac.ruler.name}}</p>
+                    </div>
+                </ng-container>
+            </div>
+        </div>
+    </section>
+</ng-container>

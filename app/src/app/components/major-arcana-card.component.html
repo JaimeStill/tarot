@@ -21,45 +21,55 @@
             <div flexBox="row"
                  flexMain="start"
                  flexCross="center">
-                <img [src]="card.suit.element.image"
-                     [alt]="card.suit.element.name"
+                <img [src]="card.element.image"
+                     [alt]="card.element.name"
                      [width]="24">
                 <p class="mat-h2"
                    flex>
-                    {{card.suit.element.name}}
+                    {{card.element.name}}
                 </p>
                 <p class="mat-h2">
-                    {{card.suit.element.polarity}}
+                    {{card.element.polarity}}
                 </p>
             </div>
             <p>
-                {{card.suit.element.keywords.join(' - ')}}
+                {{card.element.keywords.join(' - ')}}
             </p>
-            <p class="mat-h2 marker">Zodiac</p>
-            <ng-template #loading>
-                <mat-progress-bar mode="indeterminate"
-                                  color="primary"></mat-progress-bar>
-            </ng-template>
-            <div *ngIf="zodiacs.length > 0 else loading"
-                 class="zodiac-grid">
-                <ng-container *ngFor="let zodiac of zodiacs">
+            <ng-container *ngIf="planet">
+                <p class="mat-h2 marker">Planet</p>
+                <div flexBox="row"
+                     flexCross="center">
+                    <img [src]="planet.image"
+                         [alt]="planet.name"
+                         [width]="24">
+                    <p class="mat-h3"
+                       flex>{{planet.name}}</p>
+                    <p class="mat-h3">Transition: {{planet.transition}}</p>
+                </div>
+            </ng-container>
+            <ng-container *ngIf="zodiac">
+                <p class="mat-h2 marker">Zodiac</p>
+                <div class="zodiac-grid">
                     <div flexBox="row"
                          flexCross="center">
                         <img [src]="zodiac.image"
                              [alt]="zodiac.name"
                              [width]="24">
-                        <p class="mat-h2">{{zodiac.name}}</p>
+                        <p class="mat-h3"
+                           flex>{{zodiac.name}}</p>
                     </div>
-                    <p class="mat-h2">{{zodiac.modality.name}}</p>
+                    <p class="mat-h3">{{zodiac.dates}}</p>
                     <div flexBox="row"
                          flexCross="center">
                         <img [src]="zodiac.ruler.image"
                              [alt]="zodiac.ruler.name"
                              [width]="24">
-                        <p class="mat-h2">{{zodiac.ruler.name}}</p>
+                        <p class="mat-h3">{{zodiac.ruler.name}}</p>
                     </div>
-                </ng-container>
-            </div>
+                </div>
+            </ng-container>
+            <p class="mat-h3 marker">{{card.astrologyType}} Keywords</p>
+            <p>{{card.astrology.keywords.join(' - ')}}</p>
         </div>
     </section>
 </ng-container>

@@ -10,13 +10,13 @@ div.deck-card {
     align-self: start;
 }
 
+div.deck-card img {
+    width: 100%;
+}
+
 div.card-details p,
 div.card-details img {
     margin: 8px;
-}
-
-div.deck-card img {
-    width: 100%;
 }
 
 div.zodiac-grid {
@@ -28,15 +28,17 @@ div.zodiac-grid {
 
 @media (max-width: 856px) {
     section.card-grid {
-        display: grid;
         grid-template-columns: initial;
         grid-template-rows: auto 1fr;
-        gap: 4px;
-        padding: 4px;
         justify-items: center;
     }
 
     div.card-details {
         max-width: 358px;
+    }
+
+    div.card-details p,
+    div.card-details img {
+        margin: 4px;
     }
 }
