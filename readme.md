@@ -20,10 +20,12 @@ Azure Hosted App: https://jps-tarot-app.azurewebsites.net/
 
 > In progress
 
-**Desktop**
+**Desktop**  
+
 https://user-images.githubusercontent.com/14102723/211125037-22d20be3-d83a-49f3-9f0b-176ffaf78145.mp4
 
-**Mobile**
+**Mobile**  
+
 https://user-images.githubusercontent.com/14102723/211125239-badefd96-210c-4618-978e-3f3a180b5be0.MOV
 
 ## Server
